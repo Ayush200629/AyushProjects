@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+    background-color: lightgreen;
+    color: #fff;
+  /*  background-image: url(cook.jpg);*/
+   /* background-size: cover;*/
+
+}
+
+header nav{
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+form input[type="text"],button[type="submit"] {
+    
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    
+}
+
+form button[type="submit"]{
+    background-color: darkgray;
+    color: white;
+    cursor: pointer;
+    transition: background-colour 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover,.recipe button:hover{
+    background-color: lightgray
+}
+.main{
+    height: 80px;
+}
+
+.recipe-container{
+    text-align: center;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 40px;
+    width: 80%;
+    padding: 20px;
+    place-items: center;
+}
+
+.recipe img{
+  height: 300px;
+
+}
+
+.recipe h3{
+  font-size: 24px;
+  margin: 5px;
+}
+
+.recipe span{
+  font-weight:700px;
+}
+
+.recipe{
+  font-size: 20px;
+  color: black;
+  margin: 5px 0;
+}
+
+
+.recipe{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rbga(78,73,73,0.1); 
+    cursor: pointer;
+    max-width: 400px;
+
+}
+
+.recipe button{
+  font-size: 20px;
+  font-weight: 600px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 18px auto;
+  background-color: darkgray;
+  color: white;
+  border: none;
+}
+
+/*reciepe details*/
+.reciepe-details{
+   display: none;
+}
+
+/*responsive code*/
+@media screen and (max-width:600px){
+ header nav{
+    flex-direction: column;
+    }
+
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+    
+/*hero-sec*/
+.hero-sec{
+    background-image: url(cook.jpg);
+    background-size: cover;
+    height: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+/*menu*/
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(53, 236, 53);
+}
+
+.box{
+    /*border: 2px solid black;*/
+    height: 400px;
+    width: 23%;
+    background-color: #fff;
+    padding: 2opx 0px 15px;
+    margin-top: 15px;
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content h2{
+    color: black;
+    align-self: center;
+}
+
+.box-content p{
+    color: #007185;
+}
+
+/**footer**/
+footer{
+    margin-top: 15px;
+  }
+  
+  .foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+   
+  .foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  ul {
+    margin-top: 20px;
+  }
+  
+  
+  ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+  }
+  
+  
+  .foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .logo{
+    
+    background-size: cover;
+    height: 60px;
+    width: 110px;
+  }
+  
+  
+  .foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 60px;
+  }
+  
+  .page{
+    font-size: 0.85rem;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .copyright{
+    font-size: 0.85rem;
+    text-align: center;
+    justify-content: center;
+  }
