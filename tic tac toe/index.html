@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <p>Can you outsmart your opponent?</p>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+            <div class="points-table">
+                <h2>Points Table</h2>
+                <p><strong>Player O:</strong> <span id="points-o">0</span></p>
+                <p><strong>Player X:</strong> <span id="points-x">0</span></p>
+            </div>
+        </div>
+        <p id="status">Player O's turn</p>
+
+        <!-- Popup Modal -->
+        <div id="winner-popup" class="modal">
+            <div class="modal-content">
+                <p id="winner-message"></p>
+                <button id="close-popup-btn">Play Again</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
