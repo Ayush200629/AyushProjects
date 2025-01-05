@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spoty.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <!-- Header Section -->
+            <div class="header">
+                <i class="fa-solid fa-chevron-left" id="prev"></i>
+                <i class="fa-solid fa-chevron-right" id="next"></i>
+            </div>
+
+            <!-- Song Details Section -->
+            <div class="song-details">
+                <img src="victory.jpeg" alt="Song Image" class="song-img" id="song-img">
+                <div class="song-info">
+                    <h1 class="song-title" id="song-title">Victory Anthem</h1>
+                    <p class="song-artist" id="song-artist">Laskhari, Khushi</p>
+                </div>
+            </div>
+
+            <!-- Audio Controls Section -->
+            <div class="audio-controls">
+                <input type="range" value="0" id="progress" class="progress-bar">
+                <div class="time">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">3:45</span>
+                </div>
+                <div class="playback-controls">
+                    <i class="fa-solid fa-chevron-left" id="prev"></i>
+                    <i class="fa-solid fa-circle-play" id="play-pause"></i>
+                    <i class="fa-solid fa-chevron-right" id="next"></i>
+                </div>
+            </div>
+            
+            <!-- Single Audio Element -->
+            <audio id="audio"></audio>
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist">
+                <li data-src="Victory-Anthem.mp3" data-title="Victory Anthem" data-artist="Laskhari, Khushi" data-img="victory.jpeg">
+                    Victory Anthem
+                </li>
+                <li data-src="pagalworld.com.mx-Bekhayali.mp3" data-title="Bekhayali" data-artist="Sachit Tandon" data-img="bekhayali.jpeg">
+                    Bekhayali
+                </li>
+                <li data-src="pagalworld.com.mx-Tera Yaar Hoon Main.mp3" data-title="Tera Yar Hoo Me" data-artist="arjit sing" data-img="tera yar hu me.jpeg">
+                   tera yar hu me
+                </li>
+                <li data-src="Alizeh Ae Dil Hai Mushkil 320 Kbps.mp3" data-title="Alizeh Ae Dil Hai Mushkil " data-artist="arjit" data-img="Alizeh-Ae-Dil-Hai-Mushkil.jpg">
+                    Alizeh Ae Dil Hai Mushkil   
+                </li>
+                <li data-src="Song5.mp3" data-title="Song 5 Title" data-artist="Artist 5" data-img="song5.jpeg">
+                    Song 5
+                </li>
+                <li data-src="Song6.mp3" data-title="Song 6 Title" data-artist="Artist 6" data-img="song6.jpeg">
+                    Song 6
+                </li>
+                <li data-src="Song7.mp3" data-title="Song 7 Title" data-artist="Artist 7" data-img="song7.jpeg">
+                    Song 7
+                </li>
+                <li data-src="Song8.mp3" data-title="Song 8 Title" data-artist="Artist 8" data-img="song8.jpeg">
+                    Song 8
+                </li>
+            </ul>
+        </div> 
+    </div>
+          <!-- Larger Div with Six Smaller Divs -->
+          <div class="game-section">
+            <div class="large-div">
+                <div class="small-div">
+                    <h4 class="heading">TIC TAC TOE</h4>
+                    <a href="tictak.html">
+                        <img src="Screenshot (1).png" alt="Image 1" class="small-div-img">
+                    </a>
+                </div>
+                <div class="small-div">
+                    <h4 class="heading">ROCK PAPER SICSSOR</h4>
+                    <a href="rock.html">
+                        <img src="Screenshot (8).png" alt="Image 2" class="small-div-img">
+                    </a>
+                </div>
+                <div class="small-div">
+                    <h4 class="heading">Game 3</h4>
+                    <a href="link3.html">
+                        <img src="Screenshot (1).png" alt="Image 3" class="small-div-img">
+                    </a>
+                </div>
+                <div class="small-div">
+                    <h4 class="heading">Game 4</h4>
+                    <a href="link4.html">
+                        <img src="Screenshot (1).png" alt="Image 4" class="small-div-img">
+                    </a>
+                </div>
+                <div class="small-div">
+                    <h4 class="heading">Game 5</h4>
+                    <a href="link5.html">
+                        <img src="Screenshot (1).png" alt="Image 5" class="small-div-img">
+                    </a>
+                </div>
+                <div class="small-div">
+                    <h4 class="heading">Game 6</h4>
+                    <a href="link6.html">
+                        <img src="Screenshot (1).png" alt="Image 6" class="small-div-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+    <script src="script.js"></script>
+</body>
+</html>

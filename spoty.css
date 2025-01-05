@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+ /*  justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    
+}
+
+.container {
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    color: lightgreen;
+    box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+    margin: 20px;
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #121212;
+    background-color: #121212;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.header i {
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.song-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.song-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.song-info {
+    text-align: left;
+}
+
+.song-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.song-artist {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.audio-controls {
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    margin: 10px 0;
+    appearance: none;
+    height: 5px;
+    background: #404040;
+    border-radius: 5px;
+    outline: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.playback-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #121212;
+}
+
+.playback-controls i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #121212;
+    transition: color 0.3s;
+}
+
+.playback-controls i:hover {
+    color: #1db954;
+}
+.playlist {
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.playlist h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.playlist li {
+    padding: 10px;
+    background-color: #121212;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.playlist li:hover {
+    background-color: #1db954;
+    color: #fff;
+}
+.playback-controls #play-pause {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: lightgreen;
+    box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+    cursor: pointer;
+}
+ 
+.playback-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playback-controls #prev{
+    width: 40px;
+  height: 40px;
+  margin: 20px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: lightgreen;
+  box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+  cursor: pointer;
+}
+
+.playback-controls #next{
+    width: 40px;
+  height: 40px;
+  margin: 20px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: lightgreen;
+  box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+  cursor: pointer;
+}
+
+
+
+/* General container styling */
+
+
+/* Music player (left corner) */
+.music-player {
+    background: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 30%;
+    align-self: flex-start;
+}
+
+.body .large-div{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212; /* Optional: Add a background color */
+}
+
+
+/* Large div covering the rest of the page with margin */
+.game-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #1e1e1e; /* Optional background color */
+    margin: 20px;
+    border-radius: 20px;
+    width: 100%;
+    color: lightgreen;
+    box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+}
+
+.large-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between small divs */
+    background-color:#121212;
+    padding: 20px;
+    border-radius: 10px;
+    color: lightgreen;
+    box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+}
+
+.small-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#121212;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 40px;
+    color: lightgreen;
+    box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+    background-size: cover;
+}
+
+
+/*.small-div button {
+    padding: 10px 15px;
+    background-color:#121212;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90%; /* Center within the div 
+    color: lightgreen;
+    box-shadow: 0 10px 20px rgba(26, 255, 26, 0.22);
+}
+
+.small-div button:hover {
+    background-color: #0056b3;
+}
+*/
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .small-div {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .small-div {
+        flex: 1 1 100%;
+    }
+}
+ 
+
+.small-div img {
+    width: 100%; /* Make the image fill the div's width */
+    height: 100%; /* Make the image fill the div's height */
+    object-fit: cover; /* Ensures the image fills the div without distortion */
+    border-radius: 5px; /* Optional: Match the div's rounded corners */
+}
+
+
+.large-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-div {
+    position: relative;
+    width: 30%; /* Adjust this value as per your layout */
+    margin: 10px;
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: for better visibility */
+    color: white;
+    font-size: 20px; /* You can adjust the font size if needed */
+}
+
+.small-div-img {
+    width: 100%;
+    height: auto;
+}
+
